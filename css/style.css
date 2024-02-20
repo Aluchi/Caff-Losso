@@ -33,6 +33,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.padding-sixem-y{
+    padding: 6em 0;
+}
 
 /* TOP SECTION */
 
@@ -111,6 +114,16 @@ header .cart-icon i:hover {
     color: var(--white-three);
 }
 
+/*---------- HOME HERO ----------*/
+
+.home-hero {
+    height: 80vh;
+    background-image: url("../imgs/home-hero.jpg");
+    background-attachment: fixed;
+}
+
+
+
 /* BLACK GAP */
 
 .black-gap {
@@ -118,139 +131,58 @@ header .cart-icon i:hover {
     padding: 30px;
 }
 
-/**/
+/*one-line-grid-imgs-gallery*/
 
-.double-publicity-posts {
+.one-line-grid-imgs-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-
-.double-publicity-posts div a img {
+.one-line-grid-imgs-gallery div img {
     width: 100%;
 }
 
-/* LARGE CARDS */
-.coffees-carousel {
-    text-align: center;
-    background-color: #ececec;
-    margin: 30px 0;
-    padding: 10px;
-}
+/* Menu-card-main */
 
-.coffees-carousel h2 {
-    font-size: 45px;
-    margin-bottom: 30px;
-}
-
-.large-cards-container {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 100%;
-    overflow: hidden;
-    /* Oculta el desbordamiento */
-}
-
-.large-card {
-    flex: 0 0 calc((100% - 15px * 2) / 3);
-    margin: 0 5px;
-    /* Reducir el margen para evitar desbordamientos */
-    padding: 15px;
-    box-sizing: border-box;
-    background-color: #fff;
-}
-
-
-
-.carousel-controls {
-    width: 100%;
-    display: flex;
+.the-best{
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 10em 8em;
+}
+.the-best .the-best-title{
+    margin-bottom: 20px;
+    font-size: 2.6em;
+}
+.the-best-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.carousel-controls button {
-    margin-top: 16px;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-#prevBtn {
-    margin-left: 20px;
-}
-
-#nextBtn {
-    margin-right: 20px;
-}
-
-#prevBtn:hover {
-    color: var(--white-three);
-}
-
-#nextBtn:hover {
-    color: var(--white-three);
-}
-
-
-.large-card a img {
+.menu-card-main {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    
+    box-shadow: 9px 9px 18px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 9px 18px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 18px -7px rgba(0,0,0,0.75);
+
+    border-radius: 20px;
+}
+.menu-card-main img {
+    object-fit: cover;
+    width: 50%;
+}
+.menu-card-main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+
+    padding: 0 40px;
 }
 
-.large-card .card-content {
-    padding: 15px;
-}
-
-.large-card .card-content h4 {
-    font-size: 18px;
-    font-weight: bold;
-
-    margin-bottom: 16px;
-}
-
-.large-card .card-content h5 {
-    color: #595959;
-    font-size: 17px;
-
-    margin-bottom: 16px;
-}
-
-.large-card .add-to-cart-btn {
-    text-decoration: none;
-    color: var(--white);
-    background-color: var(--dark-green);
-
-    padding: 8px 15px;
-    border-radius: 5px;
-    display: inline-block;
-
-    transition: .2s;
-}
-
-.large-card .add-to-cart-btn:hover {
-    color: var(--white-two);
-    background-color: #728a48;
-}
-
-.see-more-products-btn {
-    text-decoration: none;
-    color: #101010;
-    background-color: var(--white);
-    border: 1px #595959 solid;
-    font-size: 17.5px;
-
-    display: inline-block;
-
-    margin-top: 16px;
-    padding: 10px 25px;
-    border-radius: 5px;
-    transition: .2s;
-}
-
-.see-more-products-btn:hover {
-    color: #556B2F;
-}
 
 /* BANNER */
 .index-banner{
