@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us | Caffé Lusso</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +41,7 @@
 
         <section class="flex-img-text">
             <div class="flex-img-text-container wrapper">
-                <img src="../imgs/coffee.jpg" alt="Sample image for about page" loading="lazy">                
+                <img src="../imgs/coffee.jpg" alt="Sample image for about page" loading="lazy" data-aos="fade-right">                
                 <div class="flex-img-text-content margin-bottom-p">
                     <p>At Caffé Lusso, we are passionate about providing an exceptional coffee experience that goes beyond
                         just
@@ -79,7 +81,7 @@
         </section>
 
         <section class="about-us-separator">
-            <img src="../imgs/show-publicity.jpg" alt="">
+            <img src="../imgs/show-publicity.jpg" alt="" data-aos="fade-up">
         </section>
 
         <section class="p-center">
@@ -100,10 +102,10 @@
             <div class="footer-item">
                 <h3>Navegation</h3>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/menu.html">Menu</a></li>
-                    <li><a href="./pages/locations.html">Locations</a></li>
-                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./locations.html">Locations</a></li>
+                    <li><a href="./about.html">About</a></li>
                 </ul>
             </div>
             <div class="social-media">
@@ -118,9 +120,10 @@
     </div>
 
     <script src="../js/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

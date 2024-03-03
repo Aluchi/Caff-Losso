@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Caffé Lusso</title>
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,9 +50,9 @@
         <!---------- WELCOME SECTION ----------->
         <section class="flex-img-text">
             <div class="wrapper flex-img-text-container">
-                <img src="./imgs/woman.jpg" alt="Welcome image" loading="lazy">
+                <img src="./imgs/woman.jpg" alt="Welcome image" loading="lazy" data-aos="fade-down" data-aos-delay="150">
                 <div class="flex-img-text-content">
-                    <h2>Welcome to Caffé Lusso!</h2>
+                    <h2 data-aos="fade-down">Welcome to Caffé Lusso!</h2>
                     <p>
                         Step into an oasis of tempting aromas and exquisite flavors at the heart of our café. At Caffé
                         Lusso, we
@@ -84,7 +86,7 @@
         <section class="the-best-section">
             <h2 class="the-best-title"><strong>The best</strong>: Especiality of the house</h2>
             <div class="the-best-cards-grid">
-                <div class="menu-card-main">
+                <div class="menu-card-main" data-aos="flip-left" >
                     <img src="./imgs/coffee-latte.jpg" alt="Latte" loading="lazy">
                     <div class="menu-card-main-content">
                         <h3>Coffee Latte</h3>
@@ -94,8 +96,8 @@
                         <h4><strong>$4.50</strong></h4>
                     </div>
                 </div>
-                <div class="menu-card-main">
-                    <img src="./imgs/medialuna.jpg" alt="Croassiant" loading="lazy">
+                <div class="menu-card-main" data-aos="flip-right" data-aos-delay="150">
+                    <img src="./imgs/medialuna.jpg" alt="Croassiant">
                     <div class="menu-card-main-content">
                         <h3>Croassiant</h3>
                         <p>Delight in our freshly baked Croissant, a classic French pastry featuring flaky layers of
@@ -104,8 +106,8 @@
                         <h4><strong>$1.50</strong></h4>
                     </div>
                 </div>
-                <div class="menu-card-main">
-                    <img src="./imgs/cake.jpg" alt="Chocolate cake" loading="lazy">
+                <div class="menu-card-main" data-aos="flip-left">
+                    <img src="./imgs/cake.jpg" alt="Chocolate cake">
                     <div class="menu-card-main-content">
                         <h3>Chocolate cake</h3>
                         <p>Indulge your sweet tooth with our decadent Chocolate Cake, made with premium cocoa and moist
@@ -115,8 +117,8 @@
                         <h4><strong>$3.25</strong></h4>
                     </div>
                 </div>
-                <div class="menu-card-main">
-                    <img src="./imgs/cookie.jpg" alt="Cookie" loading="lazy">
+                <div class="menu-card-main" data-aos="flip-right" data-aos-delay="150">
+                    <img src="./imgs/cookie.jpg" alt="Cookie">
                     <div class="menu-card-main-content">
                         <h3>Cookies</h3>
                         <p>Treat yourself to our irresistible Chocolate Cookies, baked to perfection with premium
@@ -163,10 +165,10 @@
     </div>
 
     <script src="./js/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous">
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 

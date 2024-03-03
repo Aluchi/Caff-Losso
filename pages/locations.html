@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locations | Caffé Lusso</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +44,7 @@
         <section class="location-info">
 
             <div class="accordion">
-                <h1>YOU CAN FIND US IN</h1>
+                <h1 class="animate__animated animate__fadeInLeft">YOU CAN FIND US IN</h1>
                 <ul>
                     <li>
                         <input type="checkbox" checked>
@@ -86,18 +89,18 @@
                 </ul>
             </div>
 
-            <img src="../imgs/maps-sample-img.png" alt="Google Maps">
+            <img src="../imgs/maps-sample-img.png" alt="Google Maps" class="animate__animated animate__fadeInRight">
 
         </section>
 
         <section class="horizontal-grid-imgs-gallery">
             <div class="gallery">
-                <img src="../imgs/cafeteria-uno.jpg" alt="Photograph of the inside of the café" loading="lazy">
-                <img src="../imgs/cafeteria-dos.jpg" alt="Photograph of the inside of the café" loading="lazy">
-                <img src="../imgs/cafeteria-tres.jpg" alt="Photograph of the inside of the café" loading="lazy">
-                <img src="../imgs/cafeteria-cuatro.jpg" alt="Photograph of the inside of the café" loading="lazy">
-                <img src="../imgs/cafeteria-cinco.jpg" alt="Photograph of the inside of the café" loading="lazy">
-                <img src="../imgs/cafeteria-seis.jpg" alt="Photograph of the inside of the café" loading="lazy">
+                <img src="../imgs/cafeteria-uno.jpg" alt="Photograph of the inside of the café" loading="lazy" data-aos="flip-down"data-aos-delay="150">
+                <img src="../imgs/cafeteria-dos.jpg" alt="Photograph of the inside of the café" loading="lazy" data-aos="flip-down">
+                <img src="../imgs/cafeteria-tres.jpg" alt="Photograph of the inside of the café" loading="lazy" data-aos="flip-down"data-aos-delay="150">
+                <img src="../imgs/cafeteria-cuatro.jpg" alt="Photograph of the inside of the café" loading="lazy" data-aos="flip-down">
+                <img src="../imgs/cafeteria-cinco.jpg" alt="Photograph of the inside of the café" loading="lazy" data-aos="flip-down"data-aos-delay="150">
+                <img src="../imgs/cafeteria-seis.jpg" alt="Photograph of the inside of the café" loading="lazy" data-aos="flip-down">
             </div>
         </section>
 
@@ -110,10 +113,10 @@
             <div class="footer-item">
                 <h3>Navegation</h3>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/menu.html">Menu</a></li>
-                    <li><a href="./pages/locations.html">Locations</a></li>
-                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./locations.html">Locations</a></li>
+                    <li><a href="./about.html">About</a></li>
                 </ul>
             </div>
             <div class="social-media">
@@ -128,9 +131,9 @@
     </div>
 
     <script src="../js/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
