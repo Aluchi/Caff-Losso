@@ -1,18 +1,29 @@
 // Colors
-
-$white: #F5F5F5;
+$white: #ffffff;
+$white-soft: #F5F5F5;
 $white-two: #F2EAD3;
 $white-three: #DFD7BF;
 $brown: #3F2305;
 $dark-brown: #2B1602;
-// Un tono más oscuro de café
 $light-brown: #6D4C20;
-// Un tono más claro de café
 $cream: #FFEBCD;
-// Un tono crema cálido
 $green: #8F9779;
-// Verde musgo para acentos frescos
 $gray: #808080;
-// Gris neutro para equilibrio
 $dark-green: #556B2F;
-// Verde oscuro para variación natural
+$soft-dark: #101010;
+
+
+%banner {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*--------------------------*/

@@ -1,204 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | Caffé Lusso</title>
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Caffé Lusso</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
-    <body>
+<body>
 
-        <div class="top-section">
-            <p>
-                <span>FREE SHIPPING</span> ON ORDERS OVER <span>$30</span>
-            </p>
-        </div>
-        <header>
+    <header>
+        <a href="./index.html">
+            <img class="logo" src="./imgs/header-logo.png" alt="header logo">
+        </a>
+        <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="nav">
+            <button class="close-menu" id="close-menu"><i class="fa-solid fa-x"></i></button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/menu.html">Menú</a></li>
+                <li><a href="./pages/locations.html">Locations</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+            </ul>
+        </nav>
 
-            <a href="./index.html">
-                <img class="logo" src="./imgs/header-logo.png" alt="header logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/menu.html">Menú</a></li>
-                    <li><a href="./pages/locations.html">Locations</a></li>
-                    <li><a href="./pages/about.html">About</a></li>
-                </ul>
-            </nav>
-            <input type="text" placeholder="Search" />
-            <a class="cart-icon" href="#">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </a>
-
-        </header>
+    </header>
 
 
 
-        <main>
+    <main>
 
-            <section class="home-hero banner">
+        <!---------- HERO SECTION ----------->
+        <section class="home-hero banner">
+            <div class="home-hero-content animate__animated animate__fadeInDown">
+                <h1>Caffé Lusso</h1>
+                <p>Elevating Your Coffee Experience, One Sip at a Time</p>
+            </div>
+            <img class="home-hero-img animate__animated animate__fadeInRight" src="./imgs/hero-cup.png" alt="">
+        </section>
 
-            </section>
+        <!--------------------->
+        <div class="black-gap"></div>
 
-            <div class="black-gap"></div>
-
-            <section class="flex-img-txt padding-sixem-y">
-                <img src="./imgs/woman.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt amet odio similique totam
-                    laudantium numquam, modi autem consequatur cum! Odio, asperiores obcaecati hic alias, repellendus, atque
-                    dolor impedit explicabo amet necessitatibus facere ipsam iure.
-                    <br><br>
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt amet odio similique totam
-                    laudantium numquam, modi autem consequatur cum! Odio, asperiores obcaecati hic alias, repellendus, atque
-                    dolor impedit explicabo amet necessitatibus facere ipsam iure.
-                    <br><br>
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt amet odio similique totam
-                    laudantium numquam, modi autem consequatur cum! Odio, asperiores obcaecati hic alias, repellendus, atque
-                    dolor impedit explicabo amet necessitatibus facere ipsam iure. Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Quisquam laboriosam veritatis commodi quo delectus explicabo.
-                    <br><br>
-                </p>
-            </section>
-
-            <!--------------------->
-
-            <section class="one-line-grid-imgs-gallery">
-                <div>
-                    <img src="./imgs/sample-img-two.png" alt="">
+        <!---------- WELCOME SECTION ----------->
+        <section class="flex-img-text">
+            <div class="wrapper flex-img-text-container">
+                <img src="./imgs/woman.jpg" alt="Welcome image" loading="lazy">
+                <div class="flex-img-text-content">
+                    <h2>Welcome to Caffé Lusso!</h2>
+                    <p>
+                        Step into an oasis of tempting aromas and exquisite flavors at the heart of our café. At Caffé
+                        Lusso, we
+                        don't just serve coffee, we craft experiences. From our carefully selected coffee beans to our
+                        freshly
+                        baked pastries, every detail is designed to delight your senses and elevate your day.
+                    </p>
                 </div>
-                <div>
-                    <img src="./imgs/sample-img.png" alt="">
-                </div>
-                <div>
-                    <img src="./imgs/sample-img-two.png" alt="">
-                </div>
-                <div>
-                    <img src="./imgs/sample-img.png" alt="">
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!--------------------->
+        <!--------------------->
 
-            <section class="the-best">
-                <h2 class="the-best-title">The Best</h2>
-                <div class="the-best-cards-grid">
-                    <div class="menu-card-main">
-                        <img src="./imgs/coffee-latte.jpg" alt="">
-                        <div class="menu-card-main-content">
-                            <h2>Coffee sample</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatum illum amet
-                                repellendus distinctio ad? Corporis dolore sunt mollitia non alias rem iusto aliquid officia.
-                            </p>
-                            <h4>$4.50</h4>
-                        </div>
-                    </div>
-                    <div class="menu-card-main">
-                        <img src="./imgs/medialuna.jpg" alt="">
-                        <div class="menu-card-main-content">
-                            <h2>Croassiant</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatum illum amet
-                                repellendus distinctio ad? Corporis dolore sunt mollitia non alias rem iusto aliquid officia.
-                            </p>
-                            <h4>$1.50</h4>
-                        </div>
-                    </div>
-                    <div class="menu-card-main">
-                        <img src="./imgs/cake.jpg" alt="">
-                        <div class="menu-card-main-content">
-                            <h2>Slice of cake</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatum illum amet
-                                repellendus distinctio ad? Corporis dolore sunt mollitia non alias rem iusto aliquid officia.
-                            </p>
-                            <h4>$3.25</h4>
-                        </div>
-                    </div>
-                    <div class="menu-card-main">
-                        <img src="./imgs/cookie.jpg" alt="">
-                        <div class="menu-card-main-content">
-                            <h2>Cookies sample</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatum illum amet
-                                repellendus distinctio ad? Corporis dolore sunt mollitia non alias rem iusto aliquid officia.
-                            </p>
-                            <h4>$1.50</h4>
-                        </div>
+        <section class="one-line-grid-imgs-gallery">
+            <div>
+                <img src="./imgs/cake.jpg" alt="Cake" loading="lazy">
+            </div>
+            <div>
+                <img src="./imgs/cappuccino.jpg" alt="Cappuccino" loading="lazy">
+            </div>
+            <div>
+                <img src="./imgs/mocha.jpg" alt="Mocha" loading="lazy">
+            </div>
+            <div>
+                <img src="./imgs/coffee-latte.jpg" alt="Latte" loading="lazy">
+            </div>
+        </section>
+
+        <!---------- THE BEST (grid) ----------->
+
+        <section class="the-best-section">
+            <h2 class="the-best-title"><strong>The best</strong>: Especiality of the house</h2>
+            <div class="the-best-cards-grid">
+                <div class="menu-card-main">
+                    <img src="./imgs/coffee-latte.jpg" alt="Latte" loading="lazy">
+                    <div class="menu-card-main-content">
+                        <h3>Coffee Latte</h3>
+                        <p> Indulge in our signature Coffee Latte, crafted with rich espresso and velvety steamed milk,
+                            delivering a perfect balance of bold flavor and creamy texture.
+                        </p>
+                        <h4><strong>$4.50</strong></h4>
                     </div>
                 </div>
-            </section>
-
-            <!--------------------->
-
-            <section class="index-banner banner">
-            </section>
-
-
-
-        </main>
-
-
-
-        <footer>
-            <div class="footer-content">
-                <div>
-                    <h5>Something</h5>
-                    <ul>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                    </ul>
+                <div class="menu-card-main">
+                    <img src="./imgs/medialuna.jpg" alt="Croassiant" loading="lazy">
+                    <div class="menu-card-main-content">
+                        <h3>Croassiant</h3>
+                        <p>Delight in our freshly baked Croissant, a classic French pastry featuring flaky layers of
+                            buttery goodness, perfect for breakfast or any time of the day.
+                        </p>
+                        <h4><strong>$1.50</strong></h4>
+                    </div>
                 </div>
-                <div>
-                    <h5>Something 2</h5>
-                    <ul>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                    </ul>
+                <div class="menu-card-main">
+                    <img src="./imgs/cake.jpg" alt="Chocolate cake" loading="lazy">
+                    <div class="menu-card-main-content">
+                        <h3>Chocolate cake</h3>
+                        <p>Indulge your sweet tooth with our decadent Chocolate Cake, made with premium cocoa and moist
+                            layers, each bite offering a heavenly blend of rich chocolate flavor and melt-in-your-mouth
+                            satisfaction.
+                        </p>
+                        <h4><strong>$3.25</strong></h4>
+                    </div>
                 </div>
-                <div>
-                    <h5>Something 3</h5>
-                    <ul>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Follow Us</h5>
-                    <div class="social-media">
-                        <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <div class="menu-card-main">
+                    <img src="./imgs/cookie.jpg" alt="Cookie" loading="lazy">
+                    <div class="menu-card-main-content">
+                        <h3>Cookies</h3>
+                        <p>Treat yourself to our irresistible Chocolate Cookies, baked to perfection with premium
+                            chocolate chips and a hint of sweetness, offering a delightful combination of crispy edges
+                            and soft, chewy centers.
+                        </p>
+                        <h4><strong>$1.50</strong></h4>
                     </div>
                 </div>
             </div>
-        </footer>
-        <div class="copyright-disclamer">
-            <h6>&copyCopyright 2024 - Alexander Muruchi</h6>
-        </div>
+        </section>
 
-        <script src="./js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
+        <!--------------------->
 
-    </body>
+        <section class="index-banner banner">
+        </section>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <nav class="footer-content">
+            <div class="footer-item">
+                <h3>Navegation</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/menu.html">Menu</a></li>
+                    <li><a href="./pages/locations.html">Locations</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </nav>
+    </footer>
+    <div class="copyright-disclamer">
+        <h4><strong>&copyCopyright 2024</strong> - Alexander Muruchi</h4>
+    </div>
+
+    <script src="./js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous">
+    </script>
+
+</body>
 
 </html>

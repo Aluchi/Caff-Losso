@@ -1,113 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Locations | Caffé Lusso</title>
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations | Caffé Lusso</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
+<body>
 
-        <div class="top-section">
-            <p>
-                <span>FREE SHIPPING</span> ON ORDERS OVER <span>$30</span>
-            </p>
-        </div>
-        <header>
+    <header>
 
-            <a href="../index.html">
-                <img class="logo" src="../imgs/header-logo.png" alt="header logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./menu.html">Menú</a></li>
-                    <li><a href="./locations.html">Locations</a></li>
-                    <li><a href="./about.html">About</a></li>
-                </ul>
-            </nav>
-            <input type="text" placeholder="Search" />
-            <a class="cart-icon" href="#">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </a>
+        <a href="../index.html">
+            <img class="logo" src="../imgs/header-logo.png" alt="header logo">
+        </a>
+        <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="nav">
+            <button class="close-menu" id="close-menu"><i class="fa-solid fa-x"></i></button>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./locations.html">Locations</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
 
-        </header>
+    </header>
 
 
 
-        <main>
+    <main>
 
-            <section class="">
-                
-            </section>
-            <section>
-                
-            </section>
-
-        </main>
-
-
-
-        <footer>
-            <div class="footer-content">
-                <div>
-                    <h5>Something</h5>
-                    <ul>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                    </ul>
+        <section class="menu-section">
+            <div class="menu-title">
+                <h1>Our menu</h1>
+                <p>Take a look to our delicious menu!</p>
+            </div>
+            <div class="menus">
+                <div class="menu-column">
+                    <h4>Café</h4>
+                    <div class="single-menu">
+                        <img src="../imgs/coffee-latte.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Latte <span>$4.50</span></h5>
+                            <p>Smooth espresso with steamed milk.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/cappuccino.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Cappuccino <span>$5</span></h5>
+                            <p>Espresso with frothy milk.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/americano.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Americano <span>$3.99</span></h5>
+                            <p>Rich espresso with hot water.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/mocha.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Mocha <span>$5.25</span></h5>
+                            <p>Espresso with chocolate and steamed milk.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h5>Something 2</h5>
-                    <ul>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                    </ul>
+                <div class="menu-column">
+                    <h4>Bakery</h4>
+                    <div class="single-menu">
+                        <img src="../imgs/medialuna.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Croissant <span>$1.50</span></h5>
+                            <p>Indulge in the classic French delight of our croissant, meticulously crafted with layers
+                                of buttery, flaky pastry.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/cookie.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Choc. Cookies <span>$1.50</span></h5>
+                            <p>Satisfy your sweet cravings with our decadent chocolate cookies, baked to perfection for
+                                rich cocoa flavor and chewy texture.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/cake.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Chocolate Cake <span>$3.25</span></h5>
+                            <p>Treat yourself to our indulgent chocolate cake, crafted with premium cocoa for a rich and
+                                moist dessert experience.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/cheesecake.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Cheescake <span>$3</span></h5>
+                            <p>Delight in our creamy cheesecake, featuring a luscious filling on a graham cracker crust
+                                for a satisfyingly sweet treat.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h5>Something 3</h5>
-                    <ul>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                        <li>SAMPLE TEXT</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Social Media</h5>
-                    <div class="social-media">
-                        <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <div class="menu-column">
+                    <h4>Breakfast</h4>
+                    <div class="single-menu">
+                        <img src="../imgs/breakfast-one.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Latte & Breakfast<br> Sandwich <span>$7.99</span></h5>
+                            <p>Start your day right with our latte paired with a hearty breakfast sandwich, combining
+                                the rich flavor of espresso with a satisfying sandwich.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/breakfast-two.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Americano & <br>Bagel <span>$6.49</span></h5>
+                            <p>Enjoy the simplicity of our Americano paired with a toasted bagel, creating a classic
+                                breakfast combination that's both comforting and delicious.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="../imgs/sample.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Cappuccino &<br> Yogurt <span>$8.29</span></h5>
+                            <p>Indulge in the creamy texture of our cappuccino alongside a refreshing yogurt parfait,
+                                combining the boldness of espresso with the freshness of yogurt and fruit for a
+                                delightful morning treat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <div class="copyright-disclamer">
-            <h6>&copy Copyright 2024</h6>
-        </div>
 
-        <script src="../js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
+        </section>
 
-    </body>
+    </main>
+
+
+
+    <footer>
+        <nav class="footer-content">
+            <div class="footer-item">
+                <h3>Navegation</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/menu.html">Menu</a></li>
+                    <li><a href="./pages/locations.html">Locations</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </nav>
+    </footer>
+    <div class="copyright-disclamer">
+        <h4><strong>&copyCopyright 2024</strong> - Alexander Muruchi</h4>
+    </div>
+
+    <script src="../js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+</body>
 
 </html>

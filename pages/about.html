@@ -5,25 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us | Caffé Lusso</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <div class="top-section">
-        <p>
-            <span>FREE SHIPPING</span> ON ORDERS OVER <span>$30</span>
-        </p>
-    </div>
     <header>
 
         <a href="../index.html">
             <img class="logo" src="../imgs/header-logo.png" alt="header logo">
         </a>
-        <nav>
+        <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="nav">
+            <button class="close-menu" id="close-menu"><i class="fa-solid fa-x"></i></button>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./menu.html">Menú</a></li>
@@ -31,10 +26,6 @@
                 <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
-        <input type="text" placeholder="Search" />
-        <a class="cart-icon" href="#">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </a>
 
     </header>
 
@@ -46,45 +37,57 @@
         <section class="about-us banner">
         </section>
 
-        <section class="flex-img-txt padding-sixem-y">
-            <img src="../imgs/coffee.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt amet odio similique totam
-                laudantium numquam, modi autem consequatur cum! Odio, asperiores obcaecati hic alias, repellendus, atque
-                dolor impedit explicabo amet necessitatibus facere ipsam iure.
-                <br><br>
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt amet odio similique totam
-                laudantium numquam, modi autem consequatur cum! Odio, asperiores obcaecati hic alias, repellendus, atque
-                dolor impedit explicabo amet necessitatibus facere ipsam iure.
-                <br><br>
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt amet odio similique totam
-                laudantium numquam, modi autem consequatur cum! Odio, asperiores obcaecati hic alias, repellendus, atque
-                dolor impedit explicabo amet necessitatibus facere ipsam iure. Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Quisquam laboriosam veritatis commodi quo delectus explicabo.
-                <br><br>
-            </p>
+        <section class="flex-img-text">
+            <div class="flex-img-text-container wrapper">
+                <img src="../imgs/coffee.jpg" alt="Sample image for about page" loading="lazy">                
+                <div class="flex-img-text-content margin-bottom-p">
+                    <p>At Caffé Lusso, we are passionate about providing an exceptional coffee experience that goes beyond
+                        just
+                        a cup of coffee. Our journey began with a simple yet profound belief: that great coffee should be an
+                        experience that tantalizes the senses, sparks conversation, and creates memorable moments.
+                    </p>
+                    <p> Founded by a team of coffee enthusiasts, Caffé Lusso is more than just a café; it's a destination
+                        where
+                        coffee lovers come together to savor the finest blends, indulge in delectable pastries, and immerse
+                        themselves in a cozy ambiance that feels like home.
+                    </p>
+                    <p>
+                        Our commitment to quality is unwavering. We meticulously source the finest coffee beans from around
+                        the
+                        world, ensuring that each cup is a masterpiece of flavor and aroma. From the moment you step through
+                        our
+                        doors, you'll be greeted by the inviting aroma of freshly brewed coffee and the warm hospitality of
+                        our
+                        dedicated team.
+                    </p>
+                    <p>
+                        But Caffé Lusso is not just about coffee; it's about community. We strive to create a welcoming
+                        environment where friends gather, ideas flow, and connections are made. Whether you're seeking a
+                        quiet
+                        spot to work, catching up with friends, or simply taking a moment for yourself, Caffé Lusso is the
+                        place
+                        to be.
+                    </p>
+    
+                    <p>
+                        Join us on a journey of discovery as we celebrate the artistry of coffee and the joy of shared
+                        moments.
+                        We invite you to sit back, relax, and experience the magic of Caffé Lusso.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="about-us-separator">
-            <img src="../imgs/show-publicity.png" alt="">
+            <img src="../imgs/show-publicity.jpg" alt="">
         </section>
 
         <section class="p-center">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita hic odio adipisci natus? Minus
-                sapiente fugit quis iste praesentium natus perferendis esse modi assumenda quidem cum provident
-                blanditiis illum culpa quasi quas consectetur amet, earum suscipit nulla rem ullam. Iure, delectus
-                ratione? Animi, ipsum dolorem! Eos illum hic molestiae similique. Culpa quisquam vero nostrum asperiores
-                molestias accusamus, sunt laudantium amet. Omnis aliquam, excepturi tempora perferendis animi at sint!
-                Esse modi id placeat pariatur aperiam tenetur, quas odit, fuga quia error iure atque sint neque dolorum
-                aut corrupti! Quae doloribus assumenda voluptatum nisi labore praesentium quis enim voluptate impedit
-                est. Rem.
-                <br><br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita hic odio adipisci natus? Minus
-                sapiente fugit quis iste praesentium natus perferendis esse modi assumenda quidem cum provident
-                blanditiis illum culpa quasi quas consectetur amet, earum suscipit nulla rem ullam. Iure, delectus
-                ratione? Animi, ipsum dolorem! Eos illum hic molestiae similique.
+                As we continue to grow and evolve, we remain dedicated to our core values of quality, passion, and
+                community. Whether you're a seasoned coffee aficionado or new to the world of specialty coffee, we look
+                forward to welcoming you into the Caffé Lusso family and sharing our love for exceptional coffee and
+                unforgettable experiences. Come join us, and let's create moments to remember, one cup at a time.
             </p>
         </section>
 
@@ -93,58 +96,30 @@
 
 
     <footer>
-        <div class="footer-content">
-            <div>
-                <h5>Something</h5>
+        <nav class="footer-content">
+            <div class="footer-item">
+                <h3>Navegation</h3>
                 <ul>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/menu.html">Menu</a></li>
+                    <li><a href="./pages/locations.html">Locations</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
                 </ul>
             </div>
-            <div>
-                <h5>Something 2</h5>
-                <ul>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                </ul>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
-            <div>
-                <h5>Something 3</h5>
-                <ul>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                    <li>SAMPLE TEXT</li>
-                </ul>
-            </div>
-            <div>
-                <h5>Social Media</h5>
-                <div class="social-media">
-                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-            </div>
-        </div>
+        </nav>
     </footer>
     <div class="copyright-disclamer">
-        <h6>&copy Copyright 2024</h6>
+        <h4><strong>&copyCopyright 2024</strong> - Alexander Muruchi</h4>
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
 </body>

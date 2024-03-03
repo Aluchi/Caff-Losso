@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+
+strong{
+    font-weight: bold;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.flex-img-text {
+	width: 100%;
+	padding: 8rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.flex-img-text-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 3em;
+        @extend %wrapper;
+		.flex-img-text-content {
+			h2 {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

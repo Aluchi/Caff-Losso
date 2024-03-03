@@ -1,0 +1,391 @@
+.home-hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../imgs/home-hero.jpg");
+    background-attachment: fixed;
+    @extend %banner;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $white;
+
+    &-content {
+        padding: 20px;
+        h1 {
+            font-size: 4rem;
+            line-height: 7rem;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: $green;
+                width: 50%;
+                height: 5px;
+            }
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    &-img {
+        width: 40%;
+    }
+}
+
+// Estilos para el espacio negro
+
+.black-gap {
+    background-color: $soft-dark;
+    padding: 30px;
+}
+
+// Estilos para la galería de imágenes en una línea
+.one-line-grid-imgs-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    div {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Estilos para la sección de mejores elementos
+.the-best-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+
+    .the-best-title {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+
+    .the-best-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 4rem;
+
+        .menu-card-main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+
+            img {
+                width: 40%;
+                object-fit: cover;
+                border-radius: 50%;
+                padding: .5rem;
+                border: 6px dotted $green;
+            }
+
+            .menu-card-main-content {
+                h3 {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    margin-bottom: 20px;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                h4 {
+                    color: $dark-green;
+                }
+            }
+        }
+    }
+}
+
+// Estilos para el banner
+.index-banner {
+    height: 50vh;
+    background-image: url("../imgs/banner-one.jpg");
+    @extend %banner;
+}
+
+
+/*<<<---------- LOCATIONS PAGE ---------->>>/
+
+/*BANNER*/
+/*ACCORDION*/
+/*HORIZONTAL IMGS GALLERY*/
+/* ABOUT US */
+/* ABOUT US BANNER*/
+/* FLEX IMAGE RIGHT P ON THE LEFT*/
+/* ABOUT US SEPARATOR OR SOMETHING IDK*/
+/* MENÚ */
+.coffee-beans {
+	height: 20vh;
+	background-image: url("../imgs/coffee-beans-banner.jpg");
+    @extend %banner;
+}
+.location-info {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	img {
+		height: 100%;
+	}
+}
+.accordion {
+	max-width: 450px;
+	margin: 90px 0;
+	padding: 30px;
+	h1 {
+		font-size: 36px;
+		line-height: 42px;
+		letter-spacing: 3px;
+	}
+	ul {
+		li {
+			h2 {
+				font-size: 26px;
+				line-height: 34px;
+				font-weight: 300;
+				letter-spacing: 1px;
+				display: block;
+				background-color: $white;
+				margin: 0;
+				cursor: pointer;
+			}
+			p {
+				max-height: 800px;
+				margin-top: 14px;
+				font-size: 17px;
+				line-height: 26px;
+				letter-spacing: 1px;
+				position: relative;
+				overflow: hidden;
+				opacity: 1;
+				transform: translate(0, 0);
+				z-index: 2;
+				transition: all 0.25s ease-in-out;
+			}
+			position: relative;
+			padding: 0;
+			margin: 0;
+			padding-bottom: 4px;
+			padding-top: 18px;
+			border-top: 1px dotted #595959;
+			&:nth-of-type(1) {
+				animation-delay: 0.5s;
+			}
+			&:nth-of-type(2) {
+				animation-delay: 0.75s;
+			}
+			&:nth-of-type(3) {
+				animation-delay: 1s;
+			}
+			&:nth-of-type() {
+				padding-bottom: 0;
+			}
+			i {
+				position: absolute;
+				transform: translate(-6px, 0);
+				margin-top: 16px;
+				right: 0;
+				&::before {
+					content: "";
+					position: absolute;
+					background-color: $soft-dark;
+					width: 3px;
+					height: 9px;
+					transform: translate(-2px, 0) rotate(45deg);
+				}
+				&::after {
+					content: "";
+					position: absolute;
+					background-color: $soft-dark;
+					width: 3px;
+					height: 9px;
+					transform: translate(2px, 0) rotate(-45deg);
+				}
+			}
+			&::before {
+				transition: all 0.25s ease-in-out;
+			}
+			&::after {
+				transition: all 0.25s ease-in-out;
+			}
+			input[type=checkbox] {
+				position: absolute;
+				cursor: pointer;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				opacity: 0;
+				&:checked {
+					~ {
+						p {
+							margin-top: 0;
+							max-height: 0;
+							opacity: 0;
+							transform: translate(0, 50%);
+						}
+						i {
+							&::before {
+								transform: translate(2px, 0) rotate(45deg);
+							}
+							&::after {
+								transform: translate(-2px, 0) rotate(-45deg);
+							}
+						}
+					}
+				}
+			}
+		}
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+.horizontal-grid-imgs-gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		margin: 30px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.about-us {
+	height: 95vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imgs/about-us.jpg");
+    @extend %banner;
+}
+.margin-bottom-p {
+	p {
+		margin-bottom: 20px;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.about-us-separator {
+	img {
+		width: 100%;
+	}
+}
+.p-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4em;
+	p {
+		text-align: center;
+		margin: 0;
+		width: 1000px;
+	}
+}
+.menu-section {
+	width: 1170px;
+	margin: 100px auto;
+	.menu-title {
+		text-align: center;
+		margin-bottom: 80px;
+		h1 {
+			text-transform: capitalize;
+			font-size: 35px;
+			position: relative;
+			display: inline-block;
+			padding-bottom: 15px;
+			margin-bottom: 10px;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 80px;
+				height: 3px;
+				background-color: $dark-green;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	.menus {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.menu-column {
+			width: 31%;
+			h4 {
+				text-transform: capitalize;
+				font-size: 24px;
+				font-weight: 500;
+				margin-bottom: 20px;
+				position: relative;
+				padding: 10px;
+				&::before {
+					content: '';
+					position: absolute;
+					width: 40px;
+					height: 2px;
+					background-color: $dark-green;
+					bottom: 0;
+				}
+			}
+			.single-menu {
+				display: flex;
+				align-items: center;
+				margin-top: 40px;
+				img {
+					object-fit: cover;
+					overflow: hidden;
+					max-width: 110px;
+					border-radius: 50%;
+					border: 1px dashed #ddd;
+					padding: 3px;
+					margin-right: 15px;
+					transition: .3s;
+				}
+				&:hover {
+					img {
+						transform: rotate(360deg);
+					}
+				}
+				.menu-content {
+					h5 {
+						text-transform: capitalize;
+						font-size: 22px;
+						font-weight: 500;
+						border-bottom: 1px dashed #222;
+						padding-bottom: 5px;
+						margin-bottom: 10px;
+						span {
+							color: $dark-green;
+							float: right;
+							font-weight: 600;
+							font-style: italic;
+						}
+					}
+				}
+			}
+		}
+	}
+}
